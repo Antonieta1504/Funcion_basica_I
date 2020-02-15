@@ -1,0 +1,166 @@
+function numeros(x){
+  var arr=[];
+  for(var i=1; i<=x; i++){
+    arr.push(i);
+  }
+  return arr;
+}
+arr= numeros(255)
+console.log(arr)
+
+_____________________________________________________
+function pares(x){
+  var sum=0;
+  for(var i=0; i<=x; i++){
+    if (i%2 == 0){
+      sum+=i;
+    }
+  }
+  return sum;
+}
+a= pares(1000);
+console.log(a);
+______________________________________________________
+function impares(x){
+  var sum=0;
+  for(var i=0; i<=x; i++){
+    if (i%2 == 1){
+      sum+=i;
+    }
+  }
+  return sum;
+}
+a= impares(5000);
+console.log(a);
+_______________________________________________________
+function numeros(x){
+  var sum=0;
+  for(var i=0; i<x.length; i++){
+    sum= sum+x[i];
+  }
+  return sum;
+}
+z= numeros([1,2,3,4,5])
+console.log(z)
+______________________________________________________
+function mayor(x){
+  var max= x[0];
+  for(var i=0; i<x.length; i++){
+    if (x[i]>max){
+      max=x[i];
+    }
+  }
+  return max;
+}
+a= mayor([-3,3,5,7]);
+console.log(a);
+______________________________________________________
+function mayor(x){
+  var sum=0;
+  var prom=0;
+  for(var i=0; i<x.length; i++){
+   sum=x[i]+sum;
+  }
+  prom=sum/x.length;
+  return prom;
+}
+a= mayor([1,3,5,7,20]);
+console.log(a);
+_______________________________________________________
+function numeros(x){
+  var arr=[];
+  for(var i=1; i<=x; i++){
+    if (i%2 == 1){
+     arr.push(i);
+    }
+  }
+  return arr;
+}
+arr= numeros(50)
+console.log(arr)
+_______________________________________________________
+function mayorque(x,y){
+  var arr=[];
+  for(var i=1; i<=x.length; i++){
+    if (x[i]>y){
+     arr.push(x[i]);
+    }
+  }
+  return arr;
+}
+arr= mayorque([1,3,5,7],3)
+console.log(arr)
+_______________________________________________________
+function cuadrado(x){
+ 
+  for(var i=1; i<x.length; i++){
+    x[i]=x[i]* x[i];
+     }
+  return x;
+}
+arr= cuadrado([1,5,10,-2])
+console.log(arr)
+_______________________________________________________
+function negativos(x){
+ 
+  for(var i=0; i<x.length; i++){
+    if(x[i]<0){
+      x[i]=0;
+    }     
+  }  
+  return x;
+}
+arr= negativos([1,5,10,-2])
+console.log(arr)
+______________________________________________________
+function maxminprom(x){
+  var sum=0
+  var max=[0];
+  var min=[0];
+  var avg= 0;
+   for(var i=0; i<x.length; i++){
+    if(x[0]<x[i]){
+      max=x[i]
+    }
+    if(x[0]>x[i]){
+      min=x[i]
+    }
+     sum=x[i]+sum;
+   }    
+   
+  avg = sum/x.length;
+   
+   
+  console.log(max)
+  console.log(min)
+  console.log(avg)
+}
+
+arr= maxminprom([1,5,10,-2])
+_______________________________________________
+function intercambia(x){
+  b=x.length;
+   for(var i=0; i<x.length; i++){
+     temp= x[b-1];
+     x[b-1]=x[0];
+     x[0]=temp;
+     return x
+ 
+}
+}
+
+arr= intercambia([1,5,10,-2])
+console.log(arr)
+______________________________________________
+function string(x){
+  for(var i=0; i<x.length; i++){
+     if(x[i]<0){
+       x[i]="Dojo";
+     }
+    
+}
+  return x
+}
+
+arr= string([-1,3,-2]);
+console.log(arr);
